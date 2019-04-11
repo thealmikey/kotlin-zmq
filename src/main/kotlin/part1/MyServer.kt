@@ -1,3 +1,5 @@
+package part1
+
 import org.zeromq.ZMQ
 
 fun main() {
@@ -9,7 +11,7 @@ fun main() {
     //we bind to a free socket
     //in case your socket is being used you'll get this
     //kind of error
-    // Exception in thread "main" org.zeromq.ZMQException: Errno 48 : Address already in use
+    // Exception in thread "part1.main" org.zeromq.ZMQException: Errno 48 : Address already in use
     //in this case, in my case i just add one to the last number so if 5555 is in use by another program
     // , i try 5556 and 5557 and so on
     // and remember to also change the port on the client side if you change it on the server
